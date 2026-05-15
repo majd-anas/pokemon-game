@@ -1,0 +1,44 @@
+html,
+body {
+  background-color: rgb(32, 62, 123);
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  font-size: 30px;
+  background-color: rgb(146, 189, 227);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: trasnform;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 5px rgba(143, 191, 255, 0.5);
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 150px;
+}
+
+.banner {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
